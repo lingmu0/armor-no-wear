@@ -1,17 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.xuwu.demo.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "demo.refmap.json",
+  "package": "net.xuwu.armornowear.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "armor_no_wear.refmap.json",
   "mixins": [
+    "LivingEntityArmorMixin",
+    "ItemStackArmorMixin"
   ],
   "client": [
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
   }
 }
